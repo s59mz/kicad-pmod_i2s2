@@ -1,0 +1,21 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid cca618d6-30d1-42b0-bf93-86ddd5d8c9e4)
+
+  (paper "A4")
+
+  (title_block
+    (title "Pmod-I2S2")
+    (date "2023-11-15")
+    (rev "1.0")
+    (company "S59MZ")
+  )
+
+  (lib_symbols
+  )
+
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)
