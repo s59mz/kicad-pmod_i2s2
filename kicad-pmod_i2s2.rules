@@ -1,0 +1,113 @@
+
+(rules PCB kicad-pmod_i2s2
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 2102)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 3.4)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.4)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_800:400_um-gnd" "Via[0-1]_800:400_um" gnd
+  )
+  (via 
+    "Via[0-1]_800:400_um-pwr" "Via[0-1]_800:400_um" pwr
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (via_rule
+    gnd "Via[0-1]_800:400_um-gnd"
+  )
+  (via_rule
+    pwr "Via[0-1]_800:400_um-pwr"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "Net-(U2-VQ)" "Net-(U3-VQ)" "Net-(U2-VA)" "Net-(U3-VA)" "Net-(U2-FILT+)" "Net-(U3-FILT+)" "Net-(U2-AOUTR)" "Net-(C14-Pad2)"
+    "Net-(U2-AOUTL)" "Net-(C15-Pad2)" "Net-(U3-AINR)" "Net-(U3-AINL)" "Net-(C18-Pad2)" "Net-(C19-Pad2)" "Net-(C20-Pad1)" "Net-(C21-Pad1)"
+    "Net-(J1-Pin_2)" "/ADOUT_MCLK" "/ADIN_MCLK" "/ADOUT_LRCLK" "/ADIN_LRCLK" "/ADOUT_SCLK" "/ADIN_SCLK" "/ADOUT_SDIN"
+    "/ADIN_SDOUT" "unconnected-(J3-PadR2)" "Net-(J4-PadR1)" "unconnected-(J4-PadR2)" "Net-(J4-PadT)" "Net-(R1-Pad1)" /SDOUT
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class gnd
+    GND
+    (clearance_class gnd)
+    (via_rule gnd)
+    (rule
+      (width 500.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class pwr
+    +3V3
+    (clearance_class pwr)
+    (via_rule pwr)
+    (rule
+      (width 500.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
