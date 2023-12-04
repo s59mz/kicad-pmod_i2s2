@@ -8,3 +8,6 @@ Top view
 
 ![alt text](https://github.com/s59mz/kicad-pmod_i2s2/blob/main/kicad-pmod_i2s2-bot.jpg)
 Bottom view
+
+[embed]https://github.com/s59mz/kicad-pmod_i2s2/blob/main/kicad-pmod_i2s2.pdf[/embed]
+Schematic
