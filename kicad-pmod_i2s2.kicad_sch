@@ -1580,6 +1580,40 @@
     )
   )
 
+  (symbol (lib_id "Device:C") (at 194.31 137.16 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 41651079-9a17-4fb8-87b5-57f9e94f77ac)
+    (property "Reference" "C?" (at 198.12 135.89 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "180p" (at 198.12 138.43 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 195.2752 140.97 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 194.31 137.16 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Type" "NPO" (at 198.12 140.97 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (pin "1" (uuid d57af5a2-238e-4ab6-95e3-f9ba12e72ab8))
+    (pin "2" (uuid b960cdd1-8152-4afd-919e-05a3d8919e44))
+    (instances
+      (project "pcm_pmod"
+        (path "/5b4b9bd4-3915-4731-81a6-668a66ef2261"
+          (reference "C?") (unit 1)
+        )
+      )
+      (project "kicad-pmod_i2s2"
+        (path "/cca618d6-30d1-42b0-bf93-86ddd5d8c9e4"
+          (reference "C17") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:GND") (at 194.31 140.97 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 42c53fb6-69e0-455d-84be-57f428a10025)
@@ -2748,7 +2782,7 @@
   )
 
   (symbol (lib_id "Device:C") (at 181.61 137.16 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid a3a81db2-e7f4-47e8-bfea-53f04da6a3b0)
     (property "Reference" "C?" (at 185.42 135.89 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -2761,6 +2795,9 @@
     )
     (property "Datasheet" "~" (at 181.61 137.16 0)
       (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Type" "NPO" (at 185.42 140.97 0)
+      (effects (font (size 1.27 1.27)) (justify left))
     )
     (pin "1" (uuid c6962df2-745c-42d4-8bfd-357293dc5e45))
     (pin "2" (uuid d3d51832-7ca1-42aa-833f-28b937b7e5a1))
@@ -3017,37 +3054,6 @@
       (project "kicad-pmod_i2s2"
         (path "/cca618d6-30d1-42b0-bf93-86ddd5d8c9e4"
           (reference "#PWR023") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C") (at 194.31 137.16 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid b83656ea-1ab0-4188-ad1c-e465fef4c998)
-    (property "Reference" "C?" (at 198.12 135.89 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "180p" (at 198.12 138.43 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 195.2752 140.97 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 194.31 137.16 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 2c45da04-11ee-4771-963c-1a526a8698a1))
-    (pin "2" (uuid 5d48f482-7d9f-469d-84f3-6a924b051018))
-    (instances
-      (project "pcm_pmod"
-        (path "/5b4b9bd4-3915-4731-81a6-668a66ef2261"
-          (reference "C?") (unit 1)
-        )
-      )
-      (project "kicad-pmod_i2s2"
-        (path "/cca618d6-30d1-42b0-bf93-86ddd5d8c9e4"
-          (reference "C17") (unit 1)
         )
       )
     )

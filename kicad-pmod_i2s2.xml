@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/home/matjaz/Kicad/kicad-pmod_i2s2/kicad-pmod_i2s2.kicad_sch</source>
-    <date>čet 16 nov 2023 21:54:15</date>
+    <date>pon 04 dec 2023 19:48:58</date>
     <tool>Eeschema 7.0.9-7.0.9~ubuntu20.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -192,7 +192,11 @@
     <comp ref="C16">
       <value>180p</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Type">NPO</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Type" value="NPO"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="kicad-pmod_i2s2.kicad_sch"/>
       <property name="ki_description" value="Unpolarized capacitor"/>
@@ -203,13 +207,17 @@
     <comp ref="C17">
       <value>180p</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Type">NPO</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Type" value="NPO"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="kicad-pmod_i2s2.kicad_sch"/>
       <property name="ki_description" value="Unpolarized capacitor"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>b83656ea-1ab0-4188-ad1c-e465fef4c998</tstamps>
+      <tstamps>41651079-9a17-4fb8-87b5-57f9e94f77ac</tstamps>
     </comp>
     <comp ref="C18">
       <value>1u</value>
