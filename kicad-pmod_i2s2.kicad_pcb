@@ -209,10 +209,10 @@
       (net 2 "GND") (pintype "passive") (tstamp a64f24ee-34ae-4719-a90d-6ed189aad7bd))
     (pad "T" smd rect (at 3.825 -3.25 90) (size 1.2 2.5) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 18 "Net-(C21-Pad1)") (pintype "passive") (tstamp 90ccf75e-e4d9-43c9-b012-3794dace344d))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_Audio.3dshapes/Jack_3.5mm_PJ320D_Horizontal.wrl"
-      (offset (xyz 0 0 0))
+    (model "${KIPRJMOD}/step/PJ-320D-A--3DModel-STEP-56544.STEP"
+      (offset (xyz -1.25 0 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz -90 0 0))
     )
   )
 
@@ -539,10 +539,10 @@
       (net 2 "GND") (pintype "passive") (tstamp 411bb4ea-46dd-4079-b546-227bc153ffef))
     (pad "T" smd rect (at 3.825 -3.25 90) (size 1.2 2.5) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 31 "Net-(J4-PadT)") (pintype "passive") (tstamp 3bbeee98-05e2-4d3d-9b11-7353e70e6612))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_Audio.3dshapes/Jack_3.5mm_PJ320D_Horizontal.wrl"
-      (offset (xyz 0 0 0))
+    (model "${KIPRJMOD}/step/PJ-320D-A--3DModel-STEP-56544.STEP"
+      (offset (xyz -1.25 0 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz -90 0 0))
     )
   )
 
