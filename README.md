@@ -9,4 +9,12 @@ Top view
 ![Botom view](kicad-pmod_i2s2-bot.jpg)
 Bottom view
 
-[Schematic pdf](kicad-pmod_i2s2.pdf)
+Schematic:
+[kicad-pmod_i2s2.pdf](kicad-pmod_i2s2.pdf)
+
+BOM:
+[kicad-pmod_i2s2.csv](kicad-pmod_i2s2.csv)
+
+Gerbers:
+[gerbers.zip](https://github.com/s59mz/kicad-pmod_i2s2/raw/main/gerbers.zip)
+
